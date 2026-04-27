@@ -191,8 +191,10 @@ function fz() {
     --exclude .git \
     --exclude node_modules \
     --exclude .cache \
-    . "$HOME" 2>/dev/null \
-    | fzf --height 40% --reverse \
+           . / 2>/dev/null \
+    | awk '{ print length, $0 }' | sort -n | cut -d' ' -f2- \
+    | fzf --query="$*" --select-1 --exit-0 \
+          --extended-exact --no-sort --height 40% --reverse \
           --preview 'tree -C {} | head -n 20') \
     && cd "$dir"
 }
