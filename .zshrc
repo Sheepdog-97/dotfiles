@@ -194,9 +194,10 @@ function fz() {
     . / 2>/dev/null \
     | fzf --query="$*" --select-1 --exit-0 \
           --extended-exact --height 40% --reverse \
-          --preview 'tree -L 2 -C {}') \
-    && cd "$dir"
+          --preview 'tree -L 2 -C {}')
+    [[ -n "$dir" ]] && cd "$dir"
 }
+
 
 
 
