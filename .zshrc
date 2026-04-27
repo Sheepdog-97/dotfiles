@@ -191,13 +191,14 @@ function fz() {
     --exclude .git \
     --exclude node_modules \
     --exclude .cache \
-           . / 2>/dev/null \
-    | awk '{ print length, $0 }' | sort -n | cut -d' ' -f2- \
+    . / 2>/dev/null \
     | fzf --query="$*" --select-1 --exit-0 \
-          --extended-exact --no-sort --height 40% --reverse \
-          --preview 'tree -C {} | head -n 20') \
+          --extended-exact --height 40% --reverse \
+          --preview 'tree -L 2 -C {}') \
     && cd "$dir"
 }
+
+
 
 ######################################
 # GIT HELPERS
