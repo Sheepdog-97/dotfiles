@@ -1,0 +1,17 @@
+#Private config
+*.private
+
+#Enviroment files
+.env	
+.env.*	
+
+#SSH / Keys (Never commit these)
+.ssh/
+.gnupg/
+
+#Cache / junk 
+.cache
+*.log
+
+#OS stuff
+.DS_Store
