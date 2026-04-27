@@ -238,3 +238,5 @@ alias pls='sudo $(fc -ln -1)'
 
 # print PATH nicely
 alias path='echo $PATH | tr ":" "\n"'
+
+[[ -f ~/.zshrc.private ]] && source ~/.zshrc.private
