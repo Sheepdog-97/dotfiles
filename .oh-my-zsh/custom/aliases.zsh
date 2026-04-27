@@ -22,6 +22,7 @@ elif [[ -f /etc/lsb-release ]]; then
   alias r='sudo apt remove '
   alias rr='sudo apt purge '
   alias c='sudo apt autoremove && sudo apt clean'
+  alias fd='fdfind'
 
 else
   echo "Unsupported distribution or cannot detect distribution."
