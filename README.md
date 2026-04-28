@@ -35,6 +35,13 @@ bash install.sh
 
 ---
 
+## 🗑 Uninstall
+
+```bash
+cd ~/dotfiles
+bash uninstall.sh
+```
+
 ## 📦 What the install script does
 
 - Clones the repo to `~/dotfiles`
