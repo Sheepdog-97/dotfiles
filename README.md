@@ -156,4 +156,4 @@ dotfiles/
 
 ## 📜 License
 
-MIT (or whatever you prefer)
+GPL-3.0 license
