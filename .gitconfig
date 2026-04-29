@@ -1,0 +1,10 @@
+[include]
+    path = .gitconfig.private
+#[user]
+#	email = youremail
+#	name = yourname
+#	signingkey = Signingkey
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true
