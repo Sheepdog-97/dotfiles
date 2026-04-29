@@ -28,6 +28,7 @@ backup_file() {
 backup_file "$HOME/.zshrc" ".zshrc"
 backup_file "$HOME/.p10k.zsh" ".p10k.zsh"
 backup_file "$HOME/.gitconfig" ".gitconfig"
+backup_file "$HOME/.gitconfig.private" ".gitconfig.private"
 backup_file "$HOME/.oh-my-zsh/custom/aliases.zsh" ".oh-my-zsh/custom/aliases.zsh"
 backup_file "$HOME/.oh-my-zsh/custom/functions.zsh" ".oh-my-zsh/custom/functions.zsh"
 
@@ -35,6 +36,7 @@ backup_file "$HOME/.oh-my-zsh/custom/functions.zsh" ".oh-my-zsh/custom/functions
 ln -sf "$DOTFILES_DIR/.zshrc" "$HOME/.zshrc"
 ln -sf "$DOTFILES_DIR/.p10k.zsh" "$HOME/.p10k.zsh"
 ln -sf "$DOTFILES_DIR/.gitconfig" "$HOME/.gitconfig"
+ln -sf "$DOTFILES_DIR/.gitconfig.private" "$HOME/.gitconfig.private"
 ln -sf "$DOTFILES_DIR/aliases.zsh" "$HOME/.oh-my-zsh/custom/aliases.zsh"
 ln -sf "$DOTFILES_DIR/functions.zsh" "$HOME/.oh-my-zsh/custom/functions.zsh"
 
