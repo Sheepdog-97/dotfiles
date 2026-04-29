@@ -27,6 +27,7 @@ restore_file() {
 remove_link "$HOME/.zshrc"
 remove_link "$HOME/.p10k.zsh"
 remove_link "$HOME/.gitconfig"
+remove_link "$HOME/.gitconfig.private"
 remove_link "$HOME/.oh-my-zsh/custom/aliases.zsh"
 remove_link "$HOME/.oh-my-zsh/custom/functions.zsh"
 
@@ -34,6 +35,7 @@ remove_link "$HOME/.oh-my-zsh/custom/functions.zsh"
 restore_file "$HOME/.zshrc" ".zshrc"
 restore_file "$HOME/.p10k.zsh" ".p10k.zsh"
 restore_file "$HOME/.gitconfig" ".gitconfig"
+restore_file "$HOME/.gitconfig" ".gitconfig.private"
 restore_file "$HOME/.oh-my-zsh/custom/aliases.zsh" ".oh-my-zsh/custom/aliases.zsh"
 restore_file "$HOME/.oh-my-zsh/custom/functions.zsh" ".oh-my-zsh/custom/functions.zsh"
 
